@@ -14,4 +14,8 @@ export default {
     normal: "rgba(209, 81, 111, 0.87)",
     mediumEmphasis: "rgba(209, 81, 111, 0.6);",
   },
+  black: "rgba(41, 41, 41, 1);",
+  error: "rgba(201, 8, 8, 0.87)",
+  warning: "rgba(214, 206, 20, 0.87)",
+  success: "rgba(10, 131, 22, 0.87)",
 };

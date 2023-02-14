@@ -34,6 +34,7 @@ import {
   selectionBoxCode,
   selectionBoxCSS,
 } from "./Components/SelectionBox/SelectionBoxSnippet.js";
+import themeCode from "./Components/Colors/colorSnippet.js";
 
 function Home() {
   return (
@@ -41,13 +42,19 @@ function Home() {
       <div className="home">
         <h2>Colors</h2>
         <div
-          style={{ backgroundColor: "rgba(235, 235, 235, 1)", padding: "56px" }}
+          style={{
+            backgroundColor: "rgba(235, 235, 235, 1)",
+            padding: "56px",
+          }}
         >
           <Colors />
         </div>
+        <div style={{ display: "flex", margin: "48px" }}>
+          <CodeSnippet code={themeCode} codeLanguage={"React"} />
+        </div>
         <h2>Typography</h2>
         <Typography />
-        <h2 style={{ marginTop: "32px" }}>Buttons</h2>
+        <h2>Buttons</h2>
         <div className="button__container">
           <Button name={"Button-P"} class={"button__primary"} />
         </div>
@@ -60,7 +67,7 @@ function Home() {
         </div>
 
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={buttonCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={buttonCode} codeLanguage={"React"} />
           <CodeSnippet code={buttonCSS} codeLanguage={"CSS "} />
         </div>
 
@@ -93,7 +100,7 @@ function Home() {
           type={"text"}
         />
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={textfieldCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={textfieldCode} codeLanguage={"React"} />
           <CodeSnippet code={textfieldCSS} codeLanguage={"CSS "} />
         </div>
 
@@ -104,7 +111,7 @@ function Home() {
         <SelectionBox type={"radio"} name={"Radio Button"} />
         <SelectionBox type={"Checkbox"} name={"Checkbox"} />
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={selectionBoxCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={selectionBoxCode} codeLanguage={"React"} />
           <CodeSnippet code={selectionBoxCSS} codeLanguage={"CSS "} />
         </div>
 
@@ -114,14 +121,14 @@ function Home() {
           <Card Image={Hilo} Alt={"leaves in pond"} />
         </div>
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={cardCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={cardCode} codeLanguage={"React"} />
           <CodeSnippet code={cardCSS} codeLanguage={"CSS "} />
         </div>
 
         <h2>Form</h2>
         <Form />
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={formCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={formCode} codeLanguage={"React"} />
           <CodeSnippet code={formCSS} codeLanguage={"CSS "} />
         </div>
         <h2>List Group</h2>
@@ -138,7 +145,7 @@ function Home() {
           ]}
         />
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={listCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={listCode} codeLanguage={"React"} />
           <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
         </div>
         <h2>HeroSection</h2>
@@ -148,7 +155,7 @@ function Home() {
           }
         />
         <div style={{ display: "flex", margin: "48px" }}>
-          <CodeSnippet code={heroSectionCode} codeLanguage={"HTML"} />
+          <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
           <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
         </div>
         <h2>Carousel</h2>

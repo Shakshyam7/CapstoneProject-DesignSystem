@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-h1 {
+.heroText {
 
     flex-wrap: wrap;
     font-family: 'Hind';

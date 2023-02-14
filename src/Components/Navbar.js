@@ -9,7 +9,7 @@ import './Navbar.css';
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  // const closeMobileMenu = () =>setClick(false);
+  const closeMobileMenu = () => setClick(false);
   return (
     <>  
       <nav className = 'nav'>
@@ -27,17 +27,17 @@ function Navbar() {
           <div  className={ click ? "nav__menu-active" : "nav__menu-container"}>
             <ul className='nav__menu'>
               <li className='nav__menu-item'>
-                <Link to = '/' className='nav__menu-link'>
+                <Link to = '/' className='nav__menu-link' onClick={closeMobileMenu}>
                   Home
                 </Link>
               </li>
               <li className='nav__menu-item'>
-                <Link to = '/shop' className='nav__menu-link'>
+                <Link to = '/shop' className='nav__menu-link' onClick={closeMobileMenu}>
                   Shop
                 </Link>
               </li>
               <li className='nav__menu-item'>
-                <Link to = '/contact' className='nav__menu-link'>
+                <Link to = '/contact' className='nav__menu-link' onClick={closeMobileMenu}>
                   Contact
                 </Link>
               </li>

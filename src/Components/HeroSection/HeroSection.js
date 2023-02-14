@@ -10,7 +10,7 @@ function HeroSection(props) {
     <>
       <div className="heroContainer">
         <div className="textContainer">
-          <h1>{props.text}</h1>
+          <h1 className="heroText">{props.text}</h1>
           <Button class={"button__primary"} name={"Explore"} />
           <Button class={"button__text"} name={"View"} />
         </div>
