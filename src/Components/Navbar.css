@@ -32,12 +32,12 @@
 }
 
 .nav__logo-link{
-  color: rgba(209, 81, 111, 0.85);
+  color: rgba(209, 81, 111, 0.87);
   font-size: 2rem;
 }
 .nav__logo-link:hover {
   text-decoration: none;
-  color: rgba(209, 81, 111, 0.85);
+  color: rgba(209, 81, 111, 0.87);
 }
 
 .nav__menu-container {
@@ -135,6 +135,18 @@
     align-items: center;
     justify-content: right;
   }
+  .nav__menu-container {
+    grid-column: 3/4;
+    height: 0;
+    
+  }
+  .nav__menu-item {
+    display: block;
+    align-items: center;
+    cursor: Pointer;
+  }
+
+
 
 }
   

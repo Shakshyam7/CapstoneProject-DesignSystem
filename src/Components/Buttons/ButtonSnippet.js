@@ -1,3 +1,21 @@
+const buttonCode = `
+import React from "react";
+import "./Button.css";
+
+function Button(props) {
+  return (
+    <>
+      <button className={props.class}>{props.name}</button>
+    </>
+  );
+}
+
+export default Button;
+
+
+`;
+
+const buttonCSS = `
 .button__primary {
     padding: 8px 16px;
     gap: 10px;
@@ -47,3 +65,7 @@
 
 
 }
+
+`;
+
+export { buttonCode, buttonCSS };

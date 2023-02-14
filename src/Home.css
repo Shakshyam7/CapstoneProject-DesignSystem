@@ -5,3 +5,15 @@
 h2 {
     margin: 25px 0px;
 }
+.button__container{
+    display: inline-block;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: none;
+}

@@ -1,3 +1,4 @@
+const formCode = `
 import React from "react";
 import Textfield from "../Textfield/textfield";
 import Button from "../Buttons/Button";
@@ -50,5 +51,47 @@ function Form() {
     </>
   );
 }
+`;
+const formCSS = `
+.form__container{
+    background: linear-gradient(to bottom, #d78799, rgba(245, 245, 245));
+    margin: 32px 0px;
+    display: inline-block;
+}
+.form__header {
+    margin: 56px;
+}
 
-export default Form;
+.form__header h6{
+    text-align: center;
+    color:  rgba(0, 0, 0, 0.87);
+                                } 
+.label__textarea{
+    display: block;
+    margin: 12px 20px;
+    height: 5rem;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0, 0.60);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.label__textarea:focus{
+    border: 2px solid rgb(0, 0, 0, 0.60);
+    outline: none;
+
+}
+
+.form__text2 {
+    margin-top: -20px;
+}
+
+.button__send{
+    margin-bottom:  56px;
+    text-align: center;
+
+}
+
+`;
+
+export { formCode, formCSS };

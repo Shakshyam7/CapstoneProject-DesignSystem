@@ -1,52 +1,69 @@
-import React from 'react'
+import React from "react";
+import {
+  ButtonGroup,
+  Container,
+  IconButton,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
+// This is the code I downloaded from Chakra UI
+// https://pro.chakra-ui.com/components/free
 
 function Footer() {
   return (
-    <div className="footer">
-          <footer class="bg-light text-center text-lg-start">
-            <div class="container p-4">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">ArtShop</h5>
-
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                  </ul>
-                </div>
-
-              
-
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Get In Touch</h5>
-                  
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-0">Follow Us</h5>
-                </div>
-              </div>
+    <div
+      style={{
+        background: " rgba(41, 41, 41, 1)",
+        padding: "56px",
+        color: "rgba(255, 255, 255, 0.87)",
+      }}
+    >
+      <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
+        <Stack spacing={{ base: "4", md: "5" }}>
+          <Stack justify="space-between" direction="row" align="center">
+            <div
+              style={{
+                color: "rgba(209, 81, 111, 0.87)",
+                fontSize: "2rem",
+              }}
+            >
+              ArtShop
             </div>
-
-            <div class="copyright">
-              © 2020 Copyright: ArtShop
-            </div>
-          </footer>
+            <ButtonGroup variant="ghost">
+              <IconButton
+                as="a"
+                href="#"
+                aria-label="LinkedIn"
+                icon={
+                  <FaInstagram
+                    fontSize="1.25rem"
+                    color="rgba(209, 81, 111, 0.87)"
+                  />
+                }
+              />
+              <IconButton
+                as="a"
+                href="#"
+                aria-label="GitHub"
+                icon={<FaFacebook fontSize="1.25rem" color="#1877f2" />}
+              />
+              <IconButton
+                as="a"
+                href="#"
+                aria-label="Twitter"
+                icon={<FaTwitter fontSize="1.25rem" color="1da1f2" />}
+              />
+            </ButtonGroup>
+          </Stack>
+          <Text fontSize="sm" color="subtle">
+            &copy; {new Date().getFullYear()} Artshop . All rights reserved.
+          </Text>
+        </Stack>
+      </Container>
     </div>
-  // REFERENCE FOOTER FROM BOOTSTRAP
-  )
+  );
 }
 
-export default Footer
+export default Footer;

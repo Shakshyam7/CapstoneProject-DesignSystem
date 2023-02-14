@@ -1,27 +1,25 @@
 import React, { useState } from "react";
-import Image from "./../Images/ship.jpg";
 import { MdFavoriteBorder } from "react-icons/md";
 import "./Card.css";
 
-function Card() {
+function Card(props) {
   const [isHovered, setIsHovered] = useState(false);
   const handleHover = () => setIsHovered(!isHovered);
   return (
     <>
       <div className="card__container">
-        <img 
-          src={Image} 
-          alt="Painting" 
-          width=" 350px" 
-          height="378px" 
-          onMouseOver={() => handleHover()}
-          onMouseLeave = {()=> handleHover()}
-          
+        <img className="card__image"
+          src={props.Image}
+          alt={props.Alt}
+          width=" 350px"
+          height="378px"
+          onMouseEnter={() => handleHover()}
+          onMouseLeave={() => handleHover()}
         />
         {isHovered && (
-            <div  className="wishlist__logo">
-              <MdFavoriteBorder />
-            </div>
+          <div className="wishlist__logo">
+            <MdFavoriteBorder />
+          </div>
         )}
       </div>
     </>
