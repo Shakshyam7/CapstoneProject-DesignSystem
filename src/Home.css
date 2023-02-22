@@ -1,11 +1,30 @@
-.home {
-    margin: 56px 56px;
+.homepageContainer {
+    display: flex;
+    
 }
 
-h2 {
-    margin: 25px 0px;
-    margin-top: 56px;
+.sidebarContainer {
+    position: fixed;
+    left: 0;
+    width: 200px;
 }
+
+
+
+.homepageContent {
+    margin-top: 5rem;
+    border: 1px solid black;
+    overflow-x: hidden; 
+    position: fixed; 
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+
 .button__container{
     display: inline-block;
     margin: 10px;
@@ -17,4 +36,31 @@ h2 {
     align-items: flex-start;
     justify-content: space-around;
     border: none;
+}
+
+.typeContainer {
+    border: 2px solid black;
+    padding-left: 20%;
+   
+}
+
+.divContainer {
+    display: flex;
+    margin: 56px;
+    
+}
+
+h2 {
+    margin : 56px 0px 0px 48px
+}
+
+.button__container{
+    display: inline-block;
+    margin: 24px 0px 24px 56px;
+}
+
+.componentContainer{
+    display: inline-block;
+    margin: 24px 0px 24px 56px;
+
 }

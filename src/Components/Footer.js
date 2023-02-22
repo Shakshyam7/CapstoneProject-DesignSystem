@@ -15,9 +15,13 @@ function Footer() {
   return (
     <div
       style={{
-        background: " rgba(41, 41, 41, 1)",
+        width: "100%",
+        background: "#212529",
         padding: "56px",
         color: "rgba(255, 255, 255, 0.87)",
+        position: "fixed",
+        bottom: 0
+        
       }}
     >
       <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
