@@ -4,7 +4,19 @@
     background-color: black;
     padding: 24px;
 }
+
 .sidebarItem{
-    color: rgb(255, 255, 255, 0.87);
+    color: rgb(255, 255, 255, 0.75);
     list-style: none;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.sidebarItem:hover{
+    color: rgb(255, 255, 255, 0.87);
+}
+
+.sidebarItem:active{
+    background-color: azure;
+    color: #030303;
 }
