@@ -35,11 +35,15 @@ import {
 } from "./Components/SelectionBox/SelectionBoxSnippet.js";
 import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
+import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 
 function Home() {
   return (
     <>
       <div className="homepageContainer">
+        <div className="homepageSidebarContainer">
+          <Sidebar sidebarItems={["Navbar", "Components", "Footer"]} />
+        </div>
         <div className="homepageContent">
           <h2 className="heading">Colors</h2>
           <div
@@ -170,7 +174,7 @@ function Home() {
             <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
             <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
           </div>
-         <Footer />
+          <Footer />
         </div>
       </div>
     </>
