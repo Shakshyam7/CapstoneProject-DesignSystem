@@ -7,6 +7,7 @@ function Sidebar({ sidebarItems }) {
       <div className="sidebarContainer">
         <ul className="sidebarUl">
           {sidebarItems.map((item, index) => (
+            
             <li className="sidebarItem" key={index}>
               {item}
             </li>

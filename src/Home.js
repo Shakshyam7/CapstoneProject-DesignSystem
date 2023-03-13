@@ -42,7 +42,20 @@ function Home() {
     <>
       <div className="homepageContainer">
         <div className="homepageSidebarContainer">
-          <Sidebar sidebarItems={["Navbar", "Components", "Footer"]} />
+          <Sidebar
+            sidebarItems={[
+              "Navbar",
+              "Typography",
+              "Buttons",
+              "Textfield",
+              "Card",
+              "BreadCrumps",
+              "List",
+              "Checkbox/Radio",
+              "Form",
+              "Footer",
+            ]}
+          />
         </div>
         <div className="homepageContent">
           <h2 className="heading">Colors</h2>
