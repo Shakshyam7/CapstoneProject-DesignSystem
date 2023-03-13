@@ -1,21 +1,20 @@
-import React from 'react'
-import "./Sidebar.css"
+import React from "react";
+import "./Sidebar.css";
 
-function Sidebar({sidebarItems}) {
+function Sidebar({ sidebarItems }) {
   return (
     <>
-    <div className='sidebarContaniner'>
-        <ul>
-            {sidebarItems.map((item, index)=> (
-                <li>
-
-                </li>
-            )
-            )}
+      <div className="sidebarContaniner">
+        <ul className="sidebarUl">
+          {sidebarItems.map((item, index) => (
+            <li className="sidebarItem" key={index}>
+              {item}
+            </li>
+          ))}
         </ul>
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
