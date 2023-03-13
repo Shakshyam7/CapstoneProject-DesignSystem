@@ -34,13 +34,14 @@ import {
   selectionBoxCSS,
 } from "./Components/SelectionBox/SelectionBoxSnippet.js";
 import themeCode from "./Components/Colors/colorSnippet.js";
+import Footer from "./Components/Footer/Footer.js";
 
 function Home() {
   return (
     <>
       <div className="homepageContainer">
-      
         <div className="homepageContent">
+          <Footer />
           <h2 className="heading">Colors</h2>
           <div
             style={{
