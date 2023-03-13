@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
  import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { FaShoppingCart } from "react-icons/fa";
-import { FaHeart } from 'react-icons/fa';
 import './Navbar.css';
 
 function Navbar() {
@@ -41,15 +40,14 @@ function Navbar() {
                   Contact
                 </Link>
               </li>
+              <li className='nav__menu-item--cart'>
+                <Link to = '/cart' className='nav__menu-link--cart' onClick={closeMobileMenu}>
+                  Cart
+                </Link>
+              </li>
             </ul>
           </div>
 
-        <div className='nav__wishlist' >
-          <Link to = '/wishlist' className='nav__wishlist-link'>
-            Wishlist <FaHeart className='nav__wishlist-logo'/>
-          </Link>
-        </div>
-            
         <div className='nav__cart' >
           <Link to = '/cart' className='nav__cart-link' >
             Cart <FaShoppingCart className='nav__cart-logo' />
