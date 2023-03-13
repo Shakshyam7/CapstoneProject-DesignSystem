@@ -2,9 +2,14 @@
     width: 100%;
     height: 20vh;
     background-color: #212529;;
+    padding: 24px
 }
 
 .footerLogo{
     font-size: 2rem;
+    color: rgb(255, 255, 255, 0.87);
+}
+
+.copyrightText{
     color: rgb(255, 255, 255, 0.87);
 }

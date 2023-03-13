@@ -6,7 +6,9 @@ function Footer() {
     <>
       <div className="footerContainer">
         <div className="footerLogo">ArtShop</div>
-        <div></div>
+        <div className="copyrightText">
+        copyright &copy; {new Date().getFullYear()}-ArtShop. All rights Reserved.
+        </div>
       </div>
     </>
   );
