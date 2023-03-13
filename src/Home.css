@@ -36,11 +36,11 @@
     align-items: flex-start;
     justify-content: space-around;
     border: none;
+    flex-wrap: wrap;
 }
 
 .typeContainer {
-    padding-left: 200px;
-   
+    padding-left: 200px; 
 }
 
 .divContainer {

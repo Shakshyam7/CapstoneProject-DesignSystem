@@ -11,8 +11,6 @@ function Card(props) {
         <img className="card__image"
           src={props.Image}
           alt={props.Alt}
-          width=" 350px"
-          height="378px"
           onMouseEnter={() => handleHover()}
           onMouseLeave={() => handleHover()}
         />
