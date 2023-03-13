@@ -10,7 +10,7 @@
 
 
 .nav {
-  background: #212529;
+  background: #030303;
   width: 100%;
   height: 5rem;
   top: 0;
@@ -18,8 +18,7 @@
   grid-template-columns: 10rem 1fr 2fr 1fr 1fr 10rem;
   justify-content: center;
   align-items: center;
-  font-family: 'Average Sans', sans-serif;
-  font-style: normal;
+ 
   position: fixed;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
@@ -36,13 +35,16 @@
 }
 
 .nav__logo-link {
-  color: rgba(209, 81, 111, 0.87);
+  color: #D1516F;
   font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 540;
 }
 
 .nav__logo-link:hover {
   text-decoration: none;
-  color: rgba(209, 81, 111, 0.87);
+  color: #D1516F;
+  
 }
 
 .nav__menu-container {
