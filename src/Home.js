@@ -41,7 +41,6 @@ function Home() {
     <>
       <div className="homepageContainer">
         <div className="homepageContent">
-          <Footer />
           <h2 className="heading">Colors</h2>
           <div
             style={{
@@ -171,6 +170,7 @@ function Home() {
             <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
             <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
           </div>
+         <Footer />
         </div>
       </div>
     </>

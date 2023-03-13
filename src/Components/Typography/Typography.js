@@ -1,21 +1,44 @@
-import React from 'react'
+import React from "react";
 
-import './Typography.css'
+import "./Typography.css";
 
 function Typography() {
   return (
-    <div  className="type__container">
-        <h1 className='heading1'>Heading 1</h1>
-        <h2 className='heading2'>Heading 2</h2>
-        <h3 className='heading3'>Heading 3</h3>
-        <h4 className='heading4'>Heading 4</h4>
-        <h5 className='heading5'>Heading 5</h5>
-        <h6 className='heading6'>Heading 6</h6>
-        <p className='body1'>Paragraph</p>
-        <body className='body2'>Paragraph</body>
-        <caption className='captions'>caption</caption>
-    </div>
-  )
+    <>
+      <div className="type__container">
+        <div className="fontTitle">
+          Font-Family: 'Hind Siliguri', sans-serif;
+        </div>
+        <div className="heading1">
+          <span className="typeSize">96px</span> Heading 1
+        </div>
+        <div className="heading2">
+          <span className="typeSize">60px</span> Heading 2
+        </div>
+        <div className="heading3">
+          <span className="typeSize">48px</span> Heading 3
+        </div>
+        <div className="heading4">
+          <span className="typeSize">36px</span> Heading 4
+        </div>
+        <div className="heading5">
+          <span className="typeSize">24px</span> Heading 5
+        </div>
+        <div className="heading6">
+          <span className="typeSize">20px</span> Heading 6
+        </div>
+        <div className="body1">
+          <span className="typeSize">16px</span> Paragraph
+        </div>
+        <div className="body2">
+          <span className="typeSize">14px</span> Paragraph
+        </div>
+        <div className="captions">
+          <span className="typeSize">12px</span> caption
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Typography
+export default Typography;
