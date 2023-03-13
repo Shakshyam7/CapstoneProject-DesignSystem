@@ -14,19 +14,15 @@
 }
 
 .heading1 {
-    font-size: 96px;
-    
+    font-size: 96px;  
 }
 
 .heading2 {
-    font-size: 60px;
-   
+    font-size: 60px; 
 }
 
 .heading3 {
     font-size: 48px;
- 
-
 }
 
 .heading4 {
@@ -35,13 +31,11 @@
 }
 
 .heading5 {
-    font-size: 24px;
-   
+    font-size: 24px; 
 }
 
 .heading6 {
-    font-size: 20px;
-   
+    font-size: 20px; 
 }
 
 .body1 {
@@ -51,18 +45,13 @@
 
 .body2 {
     font-size: 14px;
-   
-
-
 }
 
 .captions {
     font-size: 12px;
-   
 }
 
 .typeSize{
-    font-size: 1rem;
-    margin-right: 24px;
-    
+    font-size: 1rem; 
+     display: block;  
 }
