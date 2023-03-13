@@ -2,21 +2,25 @@
     width: 200px;
     height: 100%;
     background-color: black;
-    padding: 24px;
+}
+.sidebarUi{
+    border: 1px solid white;
 }
 
 .sidebarItem{
     color: rgb(255, 255, 255, 0.75);
     list-style: none;
-    padding: 12px 0px;
     cursor: pointer;
+    border: 1px solid white;
+    padding: 12px 24px;
+
 }
 
 .sidebarItem:hover{
-    color: rgb(255, 255, 255, 0.87);
+    background-color: rgb(255, 255, 255, 0.87);
+    color: black;
 }
 
 .sidebarItem:active{
-    background-color: azure;
     color: #030303;
 }
