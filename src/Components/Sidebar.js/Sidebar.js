@@ -4,7 +4,7 @@ import "./Sidebar.css";
 function Sidebar({ sidebarItems }) {
   return (
     <>
-      <div className="sidebarContaniner">
+      <div className="sidebarContainer">
         <ul className="sidebarUl">
           {sidebarItems.map((item, index) => (
             <li className="sidebarItem" key={index}>
