@@ -1,18 +1,17 @@
 .container {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
     margin-bottom: 56px;
+    flex-wrap: wrap;
+    
 }
 
 
 .rectangle {
-    display: inline;
     height: 150px;
     width: 150px;
-    text-align: center;
-    
-   
+    text-align: center;   
 }
 
 .rectangle1 {
@@ -51,8 +50,5 @@
 }
 .rectangle9{
     background-color: #D1516F;
-
-}
-.rectangle10{
 
 }
