@@ -1,9 +1,20 @@
 import React from 'react'
 import "./Sidebar.css"
 
-function Sidebar() {
+function Sidebar({sidebarItems}) {
   return (
-    <div>Sidebar</div>
+    <>
+    <div className='sidebarContaniner'>
+        <ul>
+            {sidebarItems.map((item, index)=> (
+                <li>
+
+                </li>
+            )
+            )}
+        </ul>
+    </div>
+    </>
   )
 }
 
