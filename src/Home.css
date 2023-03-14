@@ -61,5 +61,25 @@
 .componentContainer{
     display: inline-block;
     margin: 24px 0px 24px 56px;
+}
+
+
+@media screen and (max-width : 576px){
+    .homepageSidebarContainer {
+       display: none;
+    }
+    .homepageContent{
+        left: 0;
+        width: 100%;
+    }
+    .typeContainer{
+        padding: 0px 24px;
+    }
+    .divContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 56px;
+        
+    }
 
 }
