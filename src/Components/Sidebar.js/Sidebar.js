@@ -8,7 +8,9 @@ function Sidebar({ sidebarItems }) {
         <ul className="sidebarUl">
           {sidebarItems.map((item, index) => (
             <li className="sidebarItem" key={index}>
-              <a href={`#${item.toLowerCase()}`}>{item}</a>
+              <a href={`#${item.toLowerCase()}`} className="sidebarLink">
+                {item}
+              </a>
             </li>
           ))}
         </ul>

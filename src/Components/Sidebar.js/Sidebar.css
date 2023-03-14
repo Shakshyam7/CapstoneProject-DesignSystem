@@ -7,7 +7,6 @@
 
 
 .sidebarItem{
-    color: rgb(255, 255, 255, 0.75);
     list-style: none;
     cursor: pointer;
     padding: 12px 24px;
@@ -16,10 +15,19 @@
 
 .sidebarItem:hover{
     background-color: rgb(255, 255, 255, 0.87);
-    color: rgb(0, 0, 0, 0.87);
 
 }
 
-.sidebarItem:active{
-    color: #030303;
+.sidebarLink{
+    color: rgb(255, 255, 255, 0.75);
+
 }
+.sidebarLink:hover{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
