@@ -70,7 +70,7 @@ function Home() {
           >
             <Colors />
           </div>
-          <div style={{ display: "flex", padding: "48px" }}>
+          <div style={{ display: "flex"}}>
             <CodeSnippet code={themeCode} codeLanguage={"React"} />
           </div>
           <h2 className="heading" id="typography">

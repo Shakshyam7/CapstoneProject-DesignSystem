@@ -46,6 +46,8 @@
 .divContainer {
     display: flex;
     margin: 56px;
+    gap: 8px;
+    
     
 }
 
@@ -77,8 +79,9 @@
     }
     .divContainer {
         display: flex;
+        width: 100%;
         flex-direction: column;
-        margin: 56px;
+        margin: 0px 12px 0px 0px ;
         
     }
 
