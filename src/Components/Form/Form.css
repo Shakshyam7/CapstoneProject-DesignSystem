@@ -1,15 +1,21 @@
 .form__container{
     background: linear-gradient(to bottom, #d78799, rgba(245, 245, 245));
-    margin: 32px 0px;
-    display: inline-block;
+    padding: 32px;
 }
 .form__header {
-    margin: 56px;
+    margin: 56px;   
 }
 
 .form__header h6{
     text-align: center;
     color:  rgba(0, 0, 0, 0.87);
+}
+.formTextInputContainer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
 }
 .form__text1{
     display: flex;
@@ -17,10 +23,7 @@
     gap: 8px;
 } 
 
-.form__text3{
-    margin: 12px 0px;
-    
-}
+
 .label__textarea{
     display: block;
     height: 5rem;
