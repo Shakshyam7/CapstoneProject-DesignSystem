@@ -36,13 +36,14 @@ import {
 import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
+import {BiMenuAltLeft} from "react-icons/bi"
 
 function Home() {
   return (
     <>
       <div className="homepageContainer">
         <div>
-          <button className="sidebarDisplayButton">haha</button>
+          <button className="sidebarDisplayButton"><BiMenuAltLeft className="sidebutton"/></button>
         </div>
         <div className="homepageSidebarContainer">
           <Sidebar
