@@ -1,17 +1,20 @@
 .container {
     display: flex;
-    align-items: center;
-    gap: 48px;
+    flex-direction: column;
     margin-bottom: 56px;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
+.primaryColorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 
+}
 .rectangle {
-    height: 150px;
-    width: 150px;
-    text-align: center;   
+    height: 100px;
+    width: 100px;
+    text-align: center;  
 }
 
 .rectangle1 {
