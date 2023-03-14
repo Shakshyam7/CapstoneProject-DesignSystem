@@ -75,7 +75,7 @@ function Home() {
             <Typography />
           </div>
           <h2 className="heading">Buttons</h2>
-          <div className="button__container">
+          <div className="button__container" id="buttons">
             <Button name={"Button-P"} class={"button__primary"} />
           </div>
 
@@ -151,7 +151,7 @@ function Home() {
           </div>
 
           <h2 className="heading">Form</h2>
-          <div className="componentContainer">
+          <div className="componentContainer" id="form">
             <Form />
           </div>
           <div className="divContainer">
