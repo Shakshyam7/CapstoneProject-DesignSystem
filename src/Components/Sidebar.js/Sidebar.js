@@ -7,11 +7,11 @@ function Sidebar({ sidebarItems }) {
       <div className="sidebarContainer">
         <ul className="sidebarUl">
           {sidebarItems.map((item, index) => (
-            <li className="sidebarItem" key={index}>
-              <a href={`#${item.toLowerCase()}`} className="sidebarLink">
+            <a href={`#${item.toLowerCase()}`} className="sidebarLink">
+              <li className="sidebarItem" key={index}>
                 {item}
-              </a>
-            </li>
+              </li>
+            </a>
           ))}
         </ul>
       </div>
