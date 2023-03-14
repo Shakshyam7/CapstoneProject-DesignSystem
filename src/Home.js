@@ -46,13 +46,14 @@ function Home() {
       <div className="homepageContainer">
         <div className="homepageSidebarContainer">
           <div>
-
-             {!click && <button
-              className="sidebarDisplayButton"
-              onClick={() => setClick(!click)}
-            >
-              <BiMenuAltLeft className="sidebutton" />
-            </button>}
+            {!click && (
+              <button
+                className="sidebarDisplayButton"
+                onClick={() => setClick(!click)}
+              >
+                <BiMenuAltLeft className="sidebutton" />
+              </button>
+            )}
           </div>
           {click && (
             <Sidebar
@@ -69,6 +70,7 @@ function Home() {
                 "Form",
                 "Footer",
               ]}
+              onClick={() => setClick(false)}
             />
           )}
         </div>
