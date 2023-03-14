@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 import Button from "./Components/Buttons/Button.js";
 import Card from "./Components/Card/Card.js";
@@ -36,32 +36,40 @@ import {
 import themeCode from "./Components/Colors/colorSnippet.js";
 import Footer from "./Components/Footer/Footer.js";
 import Sidebar from "./Components/Sidebar.js/Sidebar.js";
-import {BiMenuAltLeft} from "react-icons/bi"
+import { BiMenuAltLeft } from "react-icons/bi";
 
 function Home() {
-  const {click, setClick} = useState(false);
+  const [click, setClick] = useState(false);
+  console.log(click);
   return (
     <>
       <div className="homepageContainer">
-        <div>
-          <button className="sidebarDisplayButton" onClick={()=>setClick(!click)}><BiMenuAltLeft className="sidebutton"/></button>
-        </div>
         <div className="homepageSidebarContainer">
-          <Sidebar
-            sidebarItems={[
-              "Colors",
-              "Typography",
-              "Buttons",
-              "Textfield",
-              "Card",
-              "BreadCrumbs",
-              "List",
-              "Checkbox/Radio",
-              "HeroSection",
-              "Form",
-              "Footer",
-            ]}
-          />
+          <div>
+            <button
+              className="sidebarDisplayButton"
+              onClick={() => setClick(!click)}
+            >
+              <BiMenuAltLeft className="sidebutton" />
+            </button>
+          </div>
+          {click && (
+            <Sidebar
+              sidebarItems={[
+                "Colors",
+                "Typography",
+                "Buttons",
+                "Textfield",
+                "Card",
+                "BreadCrumbs",
+                "List",
+                "Checkbox/Radio",
+                "HeroSection",
+                "Form",
+                "Footer",
+              ]}
+            />
+          )}
         </div>
         <div className="homepageContent">
           <h2 className="heading" id="colors">
