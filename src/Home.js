@@ -41,6 +41,9 @@ function Home() {
   return (
     <>
       <div className="homepageContainer">
+        <div>
+          <button className="sidebarDisplayButton">haha</button>
+        </div>
         <div className="homepageSidebarContainer">
           <Sidebar
             sidebarItems={[

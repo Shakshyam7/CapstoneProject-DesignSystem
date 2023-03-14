@@ -82,6 +82,13 @@
     background-color: rgba(235, 235, 235, 1);
     padding: 24px 56px;
 }
+.sidebarDisplayButton{
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    background-color: #D15165 ;
+    z-index: 1;
+}
 
 @media screen and (max-width : 576px){
     .homepageSidebarContainer {
