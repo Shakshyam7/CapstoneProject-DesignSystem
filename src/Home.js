@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 import Button from "./Components/Buttons/Button.js";
 import Card from "./Components/Card/Card.js";
@@ -39,11 +39,12 @@ import Sidebar from "./Components/Sidebar.js/Sidebar.js";
 import {BiMenuAltLeft} from "react-icons/bi"
 
 function Home() {
+  const {click, setClick} = useState(false);
   return (
     <>
       <div className="homepageContainer">
         <div>
-          <button className="sidebarDisplayButton"><BiMenuAltLeft className="sidebutton"/></button>
+          <button className="sidebarDisplayButton" onClick={()=>setClick(!click)}><BiMenuAltLeft className="sidebutton"/></button>
         </div>
         <div className="homepageSidebarContainer">
           <Sidebar
