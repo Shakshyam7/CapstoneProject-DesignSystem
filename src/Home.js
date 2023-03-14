@@ -65,7 +65,7 @@ function Home() {
           <div className="homeColorContainer">
             <Colors />
           </div>
-          <div style={{ display: "flex" }}>
+          <div className="divContainer">
             <CodeSnippet code={themeCode} codeLanguage={"React"} />
           </div>
           <h2 className="heading" id="typography">

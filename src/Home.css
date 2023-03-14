@@ -47,8 +47,8 @@
     display: flex;
     margin: 56px;
     gap: 8px;
-    
-    
+    flex-wrap: wrap;
+       
 }
 
 .heading {
@@ -96,9 +96,9 @@
     }
     .divContainer {
         display: flex;
+        margin: 8px;
         width: 100%;
         flex-direction: column;
-        margin: 0px 12px 0px 0px ;  
     }
     .formContainer{
         margin: 8px;
