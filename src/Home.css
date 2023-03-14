@@ -65,6 +65,17 @@
     margin: 24px 0px 24px 56px;
 }
 
+.formContainer{
+    margin: 8px;
+}
+
+.homeTextfieldContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0px 24px 56px;
+
+}
 
 @media screen and (max-width : 576px){
     .homepageSidebarContainer {

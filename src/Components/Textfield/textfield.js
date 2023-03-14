@@ -1,16 +1,16 @@
 import React from "react";
 import "./textfield.css";
 
-function textfield(props) {
+function textfield({name, text, className,type, property, placeholder}) {
   return (
     <>
       <div className="textfield__container">
-        <label className={props.name}>{props.text}</label>
+        {text && <label className={name}>{text}</label>}
         <input
-          className={props.class}
-          type={props.type}
-          disabled={props.property}
-          placeholder={props.placeholder}
+          className={className}
+          type={type}
+          disabled={property}
+          placeholder={placeholder}
         />
       </div>
     </>

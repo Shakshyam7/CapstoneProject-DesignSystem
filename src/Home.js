@@ -107,28 +107,28 @@ function Home() {
           <h2 className="heading" id="textfield">
             Textfield
           </h2>
-          <div className="componentContainer">
+          <div className="homeTextfieldContainer">
             <Textfield
               name={"label__textfield"}
-              class={"textfield"}
+              className={"textfield"}
               text={"Textfield"}
               type={"text"}
             />
             <Textfield
               name={"label__textfield"}
-              class={"textfield__focus"}
+              className={"textfield__focus"}
               text={"Textfield Active"}
               type={"text"}
             />
             <Textfield
               name={"label__textfield-error"}
-              class={"textfield__error"}
+              className={"textfield__error"}
               text={"Textfield Error"}
               type={"text"}
             />
             <Textfield
               name={"label__textfield-disabled"}
-              class={"textfield"}
+              className={"textfield"}
               property={"true"}
               text={"Textfield Disabled"}
               type={"text"}
@@ -168,7 +168,7 @@ function Home() {
           <h2 className="heading" id="form">
             Form
           </h2>
-          <div className="componentContainer" id="form">
+          <div className="formContainer" id="form">
             <Form />
           </div>
           <div className="divContainer">
