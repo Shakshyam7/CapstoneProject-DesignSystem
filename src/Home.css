@@ -76,7 +76,11 @@
     flex-wrap: wrap;
     gap: 8px;
     margin: 24px 0px 24px 56px;
+}
 
+.homeColorContainer{
+    background-color: rgba(235, 235, 235, 1);
+    padding: 24px 56px;
 }
 
 @media screen and (max-width : 576px){
@@ -102,6 +106,9 @@
     .button__container{
         margin: 24px 8px;
         gap: 24px;
+    }
+    .homeColorContainer{
+        padding: 8px;
     }
 
 }

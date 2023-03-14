@@ -62,12 +62,7 @@ function Home() {
           <h2 className="heading" id="colors">
             Colors
           </h2>
-          <div
-            style={{
-              backgroundColor: "rgba(235, 235, 235, 1)",
-              padding: "56px",
-            }}
-          >
+          <div className="homeColorContainer">
             <Colors />
           </div>
           <div style={{ display: "flex" }}>
