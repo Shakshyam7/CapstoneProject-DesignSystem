@@ -7,6 +7,7 @@
 
 
 .sidebarItem{
+    list-style: none;
     cursor: pointer;
     padding: 12px 24px;
     transition: 0.2s ease-in-out;

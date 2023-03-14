@@ -1,11 +1,7 @@
 import React from "react";
-import Sidebar from "./Components/Sidebar.js/Sidebar";
+
 function Shop() {
-  return (
-    <>
-      <Sidebar sidebarItems={["Navbar", "Components", "Footer"]} />
-    </>
-  );
+  return <></>;
 }
 
 export default Shop;

@@ -44,21 +44,24 @@ function Home() {
         <div className="homepageSidebarContainer">
           <Sidebar
             sidebarItems={[
-              "Navbar",
+              "Colors",
               "Typography",
               "Buttons",
               "Textfield",
               "Card",
-              "BreadCrumps",
+              "BreadCrumbs",
               "List",
               "Checkbox/Radio",
+              "HeroSection",
               "Form",
               "Footer",
             ]}
           />
         </div>
         <div className="homepageContent">
-          <h2 className="heading">Colors</h2>
+          <h2 className="heading" id="colors">
+            Colors
+          </h2>
           <div
             style={{
               backgroundColor: "rgba(235, 235, 235, 1)",
@@ -70,11 +73,15 @@ function Home() {
           <div style={{ display: "flex", padding: "48px" }}>
             <CodeSnippet code={themeCode} codeLanguage={"React"} />
           </div>
-          <h2 className="heading">Typography</h2>
+          <h2 className="heading" id="typography">
+            Typography
+          </h2>
           <div className="typeContainer">
             <Typography />
           </div>
-          <h2 className="heading">Buttons</h2>
+          <h2 className="heading" id="buttons">
+            Buttons
+          </h2>
           <div className="button__container" id="buttons">
             <Button name={"Button-P"} class={"button__primary"} />
           </div>
@@ -91,11 +98,15 @@ function Home() {
             <CodeSnippet code={buttonCSS} codeLanguage={"CSS "} />
           </div>
 
-          <h2 className="heading">Breadcrumbs</h2>
+          <h2 className="heading" id="breadcrumbs">
+            Breadcrumbs
+          </h2>
           <div className="componentContainer">
             <Breadcrumbs />
           </div>
-          <h2 className="heading">Textfield</h2>
+          <h2 className="heading" id="textfield">
+            Textfield
+          </h2>
           <div className="componentContainer">
             <Textfield
               name={"label__textfield"}
@@ -128,7 +139,9 @@ function Home() {
             <CodeSnippet code={textfieldCSS} codeLanguage={"CSS "} />
           </div>
 
-          <h2 className="heading">Checkbox/Radio button</h2>
+          <h2 className="heading" id="checkbox/radio">
+            Checkbox/Radio button
+          </h2>
           <div className="componentContainer">
             <SelectionBox type={"radio"} />
             <SelectionBox type={"Checkbox"} />
@@ -140,7 +153,9 @@ function Home() {
             <CodeSnippet code={selectionBoxCSS} codeLanguage={"CSS "} />
           </div>
 
-          <h2 className="heading">Card</h2>
+          <h2 className="heading" id="card">
+            Card
+          </h2>
           <div className="card">
             <Card Image={Flower} Alt={"Flower"} />
             <Card Image={Hilo} Alt={"leaves in pond"} />
@@ -150,7 +165,9 @@ function Home() {
             <CodeSnippet code={cardCSS} codeLanguage={"CSS "} />
           </div>
 
-          <h2 className="heading">Form</h2>
+          <h2 className="heading" id="form">
+            Form
+          </h2>
           <div className="componentContainer" id="form">
             <Form />
           </div>
@@ -158,7 +175,9 @@ function Home() {
             <CodeSnippet code={formCode} codeLanguage={"React"} />
             <CodeSnippet code={formCSS} codeLanguage={"CSS "} />
           </div>
-          <h2 className="heading">List Group</h2>
+          <h2 className="heading" id="list">
+            List Group
+          </h2>
           <div className="componentContainer">
             <h4>Unorder List</h4>
             <UnorderList
@@ -177,7 +196,9 @@ function Home() {
             <CodeSnippet code={listCode} codeLanguage={"React"} />
             <CodeSnippet code={listCSS} codeLanguage={"CSS "} />
           </div>
-          <h2 className="heading">HeroSection</h2>
+          <h2 className="heading" id="herosection">
+            HeroSection
+          </h2>
           <HeroSection
             text={
               "Add a touch of Beauty to your Home with our Stunning Pieces of Art."
@@ -187,7 +208,9 @@ function Home() {
             <CodeSnippet code={heroSectionCode} codeLanguage={"React"} />
             <CodeSnippet code={heroSectionCSS} codeLanguage={"CSS "} />
           </div>
-          <Footer />
+          <div id="footer">
+            <Footer />
+          </div>
         </div>
       </div>
     </>

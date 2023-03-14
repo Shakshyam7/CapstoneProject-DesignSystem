@@ -6,8 +6,6 @@
 .homepageSidebarContainer {
     position: fixed;
     margin-top: 5rem;
-    left: 0;
-    width: 200px;
     height: 100%;
 }
 
