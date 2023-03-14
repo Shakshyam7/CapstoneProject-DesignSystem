@@ -45,7 +45,7 @@ function Home() {
     <>
       <div className="homepageContainer">
         <div className="homepageSidebarContainer">
-          <div>
+          <div className="">
             {!click && (
               <button
                 className="sidebarDisplayButton"
@@ -74,6 +74,21 @@ function Home() {
             />
           )}
         </div>
+        <Sidebar
+          sidebarItems={[
+            "Colors",
+            "Typography",
+            "Buttons",
+            "Textfield",
+            "Card",
+            "BreadCrumbs",
+            "List",
+            "Checkbox/Radio",
+            "HeroSection",
+            "Form",
+            "Footer",
+          ]}
+        />
         <div className="homepageContent">
           <h2 className="heading" id="colors">
             Colors
