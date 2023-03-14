@@ -44,7 +44,7 @@ function Form() {
             </div>
           </div>
           <div className="button__send">
-            <Button className={"button__primary"} name={"SEND"} />
+            <Button class={"button__primary"} name={"SEND"} />
           </div>
         </div>
       </div>
