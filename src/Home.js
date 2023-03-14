@@ -70,7 +70,7 @@ function Home() {
           >
             <Colors />
           </div>
-          <div style={{ display: "flex"}}>
+          <div style={{ display: "flex" }}>
             <CodeSnippet code={themeCode} codeLanguage={"React"} />
           </div>
           <h2 className="heading" id="typography">
@@ -84,12 +84,9 @@ function Home() {
           </h2>
           <div className="button__container" id="buttons">
             <Button name={"Button-P"} class={"button__primary"} />
-          </div>
 
-          <div className="button__container">
             <Button name={"Button-S"} class={"button__secondary"} />
-          </div>
-          <div className="button__container">
+
             <Button name={"Button-T"} class={"button__text"} />
           </div>
 

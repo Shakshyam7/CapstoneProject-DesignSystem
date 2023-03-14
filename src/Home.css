@@ -40,7 +40,7 @@
 }
 
 .typeContainer {
-    padding-left: 200px; 
+    padding: 56px
 }
 
 .divContainer {
@@ -56,8 +56,10 @@
 }
 
 .button__container{
-    display: inline-block;
-    margin: 24px 0px 24px 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin: 24px 48px;
 }
 
 .componentContainer{
@@ -66,7 +68,7 @@
 }
 
 .formContainer{
-    margin: 8px;
+    margin: 56px;
 }
 
 .homeTextfieldContainer{
@@ -92,8 +94,14 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        margin: 0px 12px 0px 0px ;
-        
+        margin: 0px 12px 0px 0px ;  
+    }
+    .formContainer{
+        margin: 8px;
+    }
+    .button__container{
+        margin: 24px 8px;
+        gap: 24px;
     }
 
 }
