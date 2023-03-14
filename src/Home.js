@@ -46,12 +46,13 @@ function Home() {
       <div className="homepageContainer">
         <div className="homepageSidebarContainer">
           <div>
-            <button
+
+             {!click && <button
               className="sidebarDisplayButton"
               onClick={() => setClick(!click)}
             >
               <BiMenuAltLeft className="sidebutton" />
-            </button>
+            </button>}
           </div>
           {click && (
             <Sidebar
